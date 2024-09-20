@@ -2,11 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   name: clahan-company-web
+  labels:
+    app: clahan-web
 spec:
   selector:
     app: clahan-web
   ports:
-    - protocal: TCP
+    - name: clahan-company-web
+      protocal: TCP
       port: 82
       targetPort: 8080
   type: LoadBalancer
