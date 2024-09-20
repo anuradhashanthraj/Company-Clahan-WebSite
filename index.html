@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clahan Technologies - Cloud and DevOps Consulting">
+    <title>Clahan Technologies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <img src="images/clahan.jpg" alt="Clahan Technologies Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#data-center">DATA CENTER</a></li>
+                <li><a href="#training">CORPORATE TRAINING</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="banner">
+            <img src="images/clahan.jpg" alt="Cloud and DevOps Banner">
+        </div>
+        <div class="intro">
+            <h1>Welcome to Clahan Technologies</h1>
+            <p>Delivering innovative Cloud and DevOps solutions with a focus on DevSecOps, FinOps, and SysOps.</p>
+            <button onclick="window.location.href='#contact'">Get in Touch</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded in January 2024, Clahan Technologies is based in Bangalore and specializes in Cloud, DevOps, DevSecOps, FinOps, and SysOps solutions. Our mission is to provide cutting-edge, secure, and scalable IT solutions that help businesses accelerate growth.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Cloud Consulting</h3>
+                <p>We help organizations adopt and manage cloud services, offering AWS, Azure, and GCP solutions.</p>
+            </div>
+            <div class="service">
+                <h3>DevSecOps</h3>
+                <p>Secure DevOps processes that ensure compliance, security, and fast delivery.</p>
+            </div>
+            <div class="service">
+                <h3>FinOps</h3>
+                <p>Cloud financial management services to optimize your cloud costs.</p>
+            </div>
+            <div class="service">
+                <h3>SysOps</h3>
+                <p>IT operations management that helps ensure the reliability and availability of systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Center Section -->
+    <section id="data-center">
+        <h2>Data Center Solutions</h2>
+        <p>We provide top-notch data center solutions, ensuring the security and reliability of your infrastructure.</p>
+        <img src="images/datacenter.jpg" alt="Data Center Image">
+    </section>
+
+    <!-- Corporate Training Section -->
+    <section id="training">
+        <h2>Corporate Training</h2>
+        <p>We offer comprehensive training programs in Cloud and DevOps, tailored to corporate needs.</p>
+        <img src="images/corporate.jpg" alt="Corporate Training">
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clahan Technologies Pvt Ltd, Bangalore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Javascript/script.js"></script>
+</body>
+</html>

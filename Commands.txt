@@ -1,0 +1,7 @@
+2 docker build -t clahan-web-project .
+   3 docker images
+   4 docker run -td --name web-app -p 82:80 clahan-web-project
+   5 docker ps
+   6 docker port 5f0b678deebe
+   7 docker exec -it web-app /bin/bash
+   8 hisory
