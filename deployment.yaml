@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: clahan-company-website
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clahan-web
+  template:
+    metadata:
+      labels:
+        app: clahan-web
+    spec:
+      containers:
+        - name: clahan-website
+          image: anusocial123/clahan-company-services:latest
+          ports:
+            - containerPort: 82
+            
